@@ -46,4 +46,23 @@ search for IAM - roles - create roles - aws service - service or use roles - sel
 Administrator access - next
 role name(give the role a name - create)
 
-Go back to ec2 - instance - check d instance - action -modify iam role - iam role - elect the role created - update
+Go back to ec2 - instance - check d instance - action -modify iam role - iam role - select the role created - update
+go back to jenkins clck on configure u will c 
+This project is parameterized go ahead and apply -save - build 
+
+threw the below error after build
+
++ terraform validate
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mReference to undeclared input variable[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  on provider.tf line 13, in provider "aws":
+[31m│[0m [0m  13:   region = [4mvar.region[0m[0m
+[31m│[0m [0m
+[31m│[0m [0mAn input variable with the name "region" has not been declared. This
+[31m│[0m [0mvariable can be declared with a variable "region" {} block.
+[31m╵[0m[0m
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Terraform plan stage)
